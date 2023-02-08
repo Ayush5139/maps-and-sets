@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Question 1</p>
+    <pre>let s ="abcadeecfb"
+        let myset = new Set();
+        for (let i = 0 ; i< s.length;i++){
+          myset.add(s[i])
+        }
+        console.log(myset);
+        result = "";
+        for ( let r of myset.keys()){
+          result=result+r;
+        }
+        console.log(result)
+    </pre>
+    <p>Question 2</p>
+    <pre>let s = "abcadeecfb";
+      let result = new Map();
+      for (let i = 0; i< s.length;i++){
+        if (result.has(s[i])){
+          let lastcount = result.get(s[i])
+          lastcount = lastcount + 1
+          result.set(s[i], lastcount)
+        }
+        else {
+          result.set(s[i],1)
+        }
+      }
+      
+      for (let [k,v] of result.entries()){
+        console.log(k,v)
+      }let s = "abcadeecfb";
+      let result = new Map();
+      for (let i = 0; i< s.length;i++){
+        if (result.has(s[i])){
+          let lastcount = result.get(s[i])
+          lastcount = lastcount + 1
+          result.set(s[i], lastcount)
+        }
+        else {
+          result.set(s[i],1)
+        }
+      }
+      
+      for (let [k,v] of result.entries()){
+        console.log(k,v)
+      }</pre>
+</body>
+</html>
